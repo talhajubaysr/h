@@ -1,0 +1,407 @@
+:root {
+    --theme-color:  #0175B3;
+    --main-bg-color: rgb(255, 255, 255);
+  } 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*header*/
+header{
+    margin: 0 auto;
+    width: 100%;
+    
+    
+}
+.contrainer{
+    background: var(--theme-color);
+    color:white ;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    
+}
+.contact{
+    padding: 10px;
+    font-size: 20px;
+}
+.contact i{
+    padding: 0 20px;
+}
+.social{
+    padding: 5px;
+   
+}
+.social a{
+    background: white;
+    color:var(--theme-color) ;
+    font-size: 20px;
+    width: 20px;
+    margin: 0px 20px ;
+    padding: 0px 10px;
+    border-radius: 2px;
+}
+.social a:hover{
+    background:none ;
+    color: rgb(253, 253, 253);
+}
+.contrainer-1{
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.logo{
+    margin-left: 150px;
+    margin-top: 20px;
+   
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    margin-top: 70px;
+    margin-right: 0px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(100, 95, 95);
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+nav ul li a:hover{
+color:var(--theme-color) ;
+}
+.search-box{
+    min-width: 250px;
+    position: relative;
+    padding-top: 60px;
+    margin-right: 150PX;
+    border-radius: 2px;
+    
+}
+.search-box input{
+padding: 10px 50px;
+position: absolute;;
+}
+.search-box i{
+    position: absolute;
+    margin-top: 10px;
+   right: -10px;
+}
+/*hero*/
+section{
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+}
+.contrainer-2{
+    background: url(../img/home-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contrainer-2 h1{
+   padding-top: 500px;
+   padding-left: 200px;
+   padding-bottom: 100px;
+   font-size: 60px;
+   color: var(--theme-color);
+}
+.contrainer-2 p{
+    padding-top: 0;
+    padding-left: 200px;
+    padding-bottom: 100px;
+    margin-top: -80px;
+    color:rgb(128, 132, 139) ;
+    width: 700px;
+    font-weight: bolder;
+    font-size:25px ;
+    
+}
+.contrainer-2 .home-btn{
+    padding-left: 200px;
+    padding-bottom: 100px;
+}
+.contrainer-2 a{
+    background: var(--theme-color);
+    font-size: 18px;
+    color:white;
+    text-decoration: none;
+    padding: 10px 14px;
+}
+/*section1*/
+section{
+    margin: 0 auto;
+    width: 100%;
+    float: left;
+}
+.text-1{
+    text-align: center;  
+    padding: 40px 300px;
+}
+.text-1 hr{
+    width: 150px;
+    margin: 0 300px;
+    
+}
+.text-1 h1{
+    font-size: 30px;
+    padding: 10px;
+    color:var(--theme-color);
+}
+.text-1 p{
+    color: rgb(100, 95, 95);
+    padding: 10px 0;
+}
+/*section2*/
+section{
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+}
+.section-2{
+    background: url(../img/consultion-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.section-2 .home-text{
+    padding: 90px 300px;
+    
+}
+.home-text h2{
+    font-size: 70px;
+    color: white;
+}
+.home-text h1{
+    font-size: 100px;
+    color: white;
+}
+.home-text hr{
+    width: 100px;
+    margin: 0 320px;
+}
+.home-btn-2 a{
+    background: var(--theme-color);
+    font-size: 18px;
+    color:white;
+    text-decoration: none;
+    padding: 10px 14px;
+}
+.home-btn-2{
+padding: 30px 0;
+}
+.little-heading{
+text-align: center;
+
+}
+.little-heading h1{
+  color: var(--theme-color);
+  font-size: 50px;
+  margin: 100px;
+}
+/*card*/
+section{
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+}
+.card{
+    background:#d8d8da;
+          display: grid;
+          grid-gap: 10px;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          overflow-x: hidden;
+          padding: 100px 100px;
+          transform-style: preserve-3d;
+          z-index: 1000;
+  }
+  .card-item{
+    min-width: 100px;  
+    transition: 0.3s ease-in-out;
+    transform-style: preserve-3d;  
+    background:white;
+    overflow: hidden;
+    transform: translateZ(50px) perspective(2000);
+    text-align: center;
+    }
+    
+    .card-item img{
+        margin: 0;
+        width: 100%;
+        
+    } 
+    .card-text{
+        padding: 20px;
+        text-align: center;
+    }
+    .card-text h1{
+        color: var(--theme-color);
+        padding: 20px;
+    }
+    /*card2*/
+    section{
+        width: 100%;
+        margin: 0 auto;
+        float: left;
+    }
+    .card-2{
+        background:white;
+              display: grid;
+              grid-gap: 10px;
+              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+              overflow-x: hidden;
+              padding: 100px 100px;
+              transform-style: preserve-3d;
+              z-index: 1000;
+             
+           
+           
+      
+      }
+      .card-item-2{
+        min-width: 100px; 
+        transition: 0.3s ease-in-out;
+        transform-style: preserve-3d;  
+        background:white;
+        overflow: hidden;
+        transform: translateZ(50px) perspective(2000);
+        text-align: center;
+        }
+        
+        .card-item-2 .hm-logo{
+            margin: 50px 0 10px 0;
+            width: 100%;
+            
+        } 
+        .card-item-2 .hm-logo a{
+            font-size: 50px;
+            color: #89898d;
+        }
+        .card-text-2{
+            padding: 20px;
+            text-align: center;
+        }
+        .card-text-2 h1{
+            color: var(--theme-color);
+            padding: 20px;
+        }
+        .our-s{
+            text-align: center;
+        }
+        .our-s h1{
+            font-size: 40px;
+            color: var(--theme-color);
+        }
+        /*section3*/
+        section{
+            width: 100%;
+            margin: 0 auto;
+            float: left;
+        }
+        .section-3{
+        background: url(../img/client-img.png);
+        text-align: center;
+        padding: 50px 400px;
+        color: white;
+        }
+        .section-3 h1{
+            font-size: 30px;
+            padding: 20px;
+        }
+        .section-3 p{
+            font-size: 18px;
+        }
+        .section-3 img{
+            padding: 50px 0 50px 0;
+        }
+        .section-3 .btn a{
+            background: var(--theme-color);
+            font-size: 18px;
+            color:white;
+            text-decoration: none;
+            padding: 10px 14px;
+        }
+        /*contrainer000*/
+        section{
+            width: 100%;
+            margin: 0 auto;
+            float: left;
+        }
+        .contrainer-000{
+            text-align: center;
+            padding: 100px 400px;
+        }
+        .contrainer-000 h1{
+            font-size: 40px;
+            padding: 100px 0;
+            color: var(--theme-color);
+        }
+        .contrainer-000 p{
+            font-size: 24px;
+            line-height: 35px;
+            color: rgb(92, 86, 86);
+            font-weight: bolder;
+        }
+        /*section4*/
+        section{
+            width: 100%;
+            margin: 0 auto;
+            float: left;
+            
+        }
+        .section-4{
+           width: 100%;
+            background: #05486d;
+            float: left;
+        }
+        .form-text{
+            width: 50%;
+            float: left;
+            padding: 100px 0 200px 50px;
+            color: white;
+        }
+        .form-text h1{
+            font-size: 30px;
+        }
+        .form-text p{
+            font-size: 20px;
+            padding:50px 100px 0 0 ;
+        }
+        .form{
+          padding: 100px 100px 0 0;  
+        }
+       .one{
+           margin: 10px;
+           padding: 5px 20px;
+       }
+       .two{
+        margin: 10px;
+        padding: 5px 20px;
+    }
+    .three{
+        margin: 10px;
+        padding: 5px 20px;
+    }
+    .four{
+        margin: 10px;
+        padding: 5px 20px;
+    }
+    .big{
+        margin: 10px;
+        padding: 10px 140px;
+    }
+    .button{
+        margin: 10px;
+        padding: 5px 20px;
+    }
